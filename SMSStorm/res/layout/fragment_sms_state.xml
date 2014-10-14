@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/state_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/item_background_selector" >
+
+        <TextView
+            android:id="@+id/state_time_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="开始时间：" />
+
+        <TextView
+            android:id="@+id/state_time_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:text="" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/state_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/item_background_selector"
+        android:minHeight="40dp" >
+
+        <TextView
+            android:id="@+id/state_conent_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="短信内容：" />
+
+        <TextView
+            android:id="@+id/state_content_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/state_conent_label"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/state_all_sent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/item_background_selector"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/state_all_sent_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="群发数目：" />
+
+        <ImageView
+            android:id="@+id/image_goto_next0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_goto_next" />
+
+        <TextView
+            android:id="@+id/state_all_sent_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/image_goto_next0"
+            android:layout_toRightOf="@id/state_all_sent_label"
+            android:singleLine="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/state_sent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/item_background_selector"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/state_sent_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="发送数目：" />
+
+        <ImageView
+            android:id="@+id/image_goto_next1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_goto_next" />
+
+        <TextView
+            android:id="@+id/state_sent_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/image_goto_next1"
+            android:layout_toRightOf="@id/state_sent_label"
+            android:singleLine="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/state_sent_failed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/item_background_selector"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/state_sent_failed_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="未发数目：" />
+
+        <ImageView
+            android:id="@+id/image_goto_next2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_goto_next" />
+
+        <TextView
+            android:id="@+id/state_sent_failed_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/image_goto_next2"
+            android:layout_toRightOf="@id/state_sent_failed_label"
+            android:singleLine="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/state_delivered_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/item_background_selector"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/state_delivered_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="送达数目：" />
+
+        <ImageView
+            android:id="@+id/image_goto_next3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_goto_next" />
+
+        <TextView
+            android:id="@+id/state_delivered_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/image_goto_next3"
+            android:layout_toRightOf="@id/state_delivered_label"
+            android:singleLine="true"
+            android:text="" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/state_delivered_failed_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/item_background_selector"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/state_delivered_failed_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="未达数目：" />
+
+        <ImageView
+            android:id="@+id/image_goto_next4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_goto_next" />
+
+        <TextView
+            android:id="@+id/state_delivered_failed_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/image_goto_next4"
+            android:layout_toRightOf="@id/state_delivered_failed_label"
+            android:singleLine="true"
+            android:text="" />
+    </RelativeLayout>
+
+</LinearLayout>

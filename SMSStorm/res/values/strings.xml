@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">群发短信</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_add">添加</string>
+    <string name="detail_total">总共：</string>
+    <string name="detail_sent">已发：</string>
+    <string name="detail_delivered">已达：</string>
+    <string name="detail_delivered_failed">未达：</string>
+    <string name="detail_sent_failed">未发：</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/comment_view_input_bg" >
+
+    <ImageView
+        android:id="@+id/edit_text_clear_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_text_clear_background_selector" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/edit_text_clear_btn"
+        android:hint="号码搜索"
+        android:phoneNumber="true"
+        android:text=""
+        android:textSize="18sp" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

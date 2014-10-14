@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_back_color"
+    android:gravity="center"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/top_load_file"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <com.scian.smsstorm.ui.view.BackedButton
+            android:id="@+id/btn_load_file"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:text="浏览" />
+
+        <com.scian.smsstorm.ui.view.BackedEditText
+            android:id="@+id/edit_load_file"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/btn_load_file"
+            android:singleLine="true"
+            android:text="" >
+
+            <requestFocus />
+        </com.scian.smsstorm.ui.view.BackedEditText>
+    </RelativeLayout>
+
+    <com.scian.smsstorm.ui.view.BackedButton
+        android:id="@+id/btn_load_file_start"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/top_load_file"
+        android:layout_marginTop="60dp"
+        android:text="开始" />
+
+</RelativeLayout>
